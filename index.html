@@ -4,18 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
+    <script src="https://kit.fontawesome.com/46adaedcbb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="text/javascript" defer></script>
     <script src="./js/main.js" type="text/javascript"></script>
     <title>Prashant Sharma</title>
 </head>
-<body class="bg-[#010F20]">
+<body class="overflow-hidden">
     <!-- pre loader start -->
-    <div class="flex items-center h-screen justify-center preloader">
+    <div class="flex items-center h-screen justify-center preloader bg-[#010F20]">
         <img src="./images/loader.gif" alt="" srcset="">
     </div>
     <!-- pre loader end -->
+    <div class="w-full min-h-screen bg-[#010F20]">
+        <nav class="flex w-full justify-around h-[80px] z-50 bg-danger leading-[80px]">
+            <div class="flex text-2xl tracking-wider no-underline font-normal text-white items-center cursor-pointer">
+                <img src="./images/logo-primary.png" alt="name logo" width="100px"/>
+                <p class="tracking-widest font-sans">Prashant <span class="text-[#02efdf]">Sha</span><span class="text-[#ed5ad2]">rma</span></p>
+            </div>
+            <ul class="flex text-white items-center">
+                <li class="list-none my-0 mx-[15px] cursor-pointer hover:text-[#02efdf] text-2xl ">Home</li>
+                <li class="list-none my-0 mx-[15px] cursor-pointer hover:text-[#ed5ad2] text-2xl">About</li>
+                <li class="list-none my-0 mx-[15px] cursor-pointer hover:text-[#02efdf] text-2xl">Skills</li>
+                <li class="list-none my-0 mx-[15px] cursor-pointer hover:text-[#ed5ad2] text-2xl">Blogs</li>
+            </ul>
+            <div class="links text-white">
+                <a href="#" class="text-3xl tracking-wider no-underline my-[25px] mx-[10px] hover:text-[#0077b5]"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-3xl tracking-wider no-underline my-[25px] mx-[10px] hover:text-[#d62976]"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-3xl tracking-wider no-underline my-[25px] mx-[10px] hover:text-[#1DA1F2]"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+        <div class="flex w-full h-[100vh] justify-center items-center py-0 px-[10%] overflow-hidden text-white wrapper-amination">
+            <div class="w-2/3 z-0">
+                <span class="block relative text-4xl tracking-widest after:absolute after:content-[''] after:h-[4px] after:w-[45px] after:bottom-[5px] after:bg-[#02efdf]">Hello👋</span>
+                <h1 class="block text-8xl font-black text-[#3d535f]">I'am <span class="text-[#02efdf] multi-text"></span></h1>
+                <p class="w-[90%] block text-2xl text-[#3d535f] my-5">
+                    Simplfication to be the best web developer that I can be and to contribute to the technology industry all that I know and can
+                    do. I am dedicated to perfecting my craft by learning from more seasoned developers, remaining humble, and continuously
+                    making strides to learn all that I can about development
+                </p>
+                <div class="w-full">
+                    <button class="outline-none border-none cursor-pointer text-base font-normal text-white bg-[#3d535f] py-[8px] px-[14px] my-[40px] mx-[5px] tracking-widest shadow-lg hover:bg-gradient-to-r from-cyan-500 to-blue-500" type="button">Download CV</button>
+                    <button class="outline-none border-none cursor-pointer text-base font-normal text-white bg-[#3d535f] py-[8px] px-[14px] my-[40px] mx-[5px] tracking-widest shadow-lg hover:bg-gradient-to-r from-cyan-500 to-blue-500" type="button">Hire Me</button>
+                </div>
+            </div>
+            <div class="w-1/3">
+                <div class="relative w-full h-full profile-image">
+                    <img src="./images/background-image.png" alt="user surrounding immage" srcset="" id="background-image">
+                    <img src="./images/profile-image.png" alt="profile image" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script >
+        const typeEffect = new Typed(".multi-text", {
+                strings: ["Developer", "Designer", "Freelancer"],
+                loop: true,
+                typeSpeed:100,
+                backSpeed:80,
+                backDelay:1500,
+            })
+    </script>
 </body>
 </html>

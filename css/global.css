@@ -6,3 +6,69 @@
     height: 100vh;
     z-index: 1000;
 }
+.profile-image img{
+    position: relative;
+    height: 100%;
+    width: calc(130%-80px) !important;
+    width: 35%;
+    top: -100px;
+    right: 50px;
+    animation: animateUserImage 4s linear infinite;
+}
+.profile-image #background-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animateBackgroundImage 4s linear infinite;
+}
+@keyframes animateUserImage {
+    50%{
+        right: 80px;
+        top: -90px;
+    }
+}
+@keyframes animateBackgroundImage {
+    50% {
+        right: 49px;
+        top: 51px;
+        width: 155%;
+        
+    }
+}
+.wrapper-amination::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left:-12px;
+    top:40%;
+    background: linear-gradient(45deg ,#02efdf,#ed5ad2);
+    animation: objectAnimation 6s linear infinite;
+}
+.wrapper-amination::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left:35%; 
+    top:12%;
+    background: linear-gradient(45deg ,#02efdf,#ed5ad2);
+    animation: objectAnimation2 6s linear infinite;
+}
+@keyframes objectAnimation {
+    50%{
+        left: -13%;
+        top:41%
+    }
+}
+@keyframes objectAnimation2 {
+    50%{
+        left: 35%;
+        top:10%
+    }
+}
